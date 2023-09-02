@@ -43,6 +43,8 @@ authController.login = async (req, res) => {
       }
 
       if (user.logindetails == null) user.logindetails = [];
+
+      console.log(loginAttempt);
       user.logindetails.push(loginAttempt);
       await user.save();
 
