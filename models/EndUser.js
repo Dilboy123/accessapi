@@ -16,6 +16,7 @@ const loginDetailSchema = new mongoose.Schema({
   location: String,
   latitude: Number,
   longitude: Number,
+  isSuccessful: Boolean,
   uuid: String,
   datetime: { type: Date, default: Date.now },
 });

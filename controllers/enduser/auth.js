@@ -29,6 +29,8 @@ authController.login = async (req, res) => {
       uuid: req.body.uuid,
       datetime: new Date(),
       isSuccessful: false,
+      latitude: req.body.lat,
+      longitude: req.body.long,
     };
 
     if (user != null) {
