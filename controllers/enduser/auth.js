@@ -23,7 +23,7 @@ authController.login = async (req, res) => {
 
     const user = await EndUser.findOne({ UserName: req.body.UserName });
 
-    const loginAttempt = {
+    let loginAttempt = {
       ip: req.body.ip,
       location: req.body.location,
       uuid: req.body.uuid,
